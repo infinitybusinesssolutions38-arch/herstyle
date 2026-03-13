@@ -157,9 +157,6 @@ const AdminPanel = () => {
       {/* Sidebar */}
       <aside className={`${sidebarOpen ? 'w-60' : 'w-16'} bg-foreground text-background flex flex-col transition-all duration-300 flex-shrink-0`}>
         <div className="flex items-center justify-between px-4 py-4 border-b border-background/10">
-          {sidebarOpen && (
-            <img src={logoImg} alt="Her Style" className="h-10 w-auto object-contain brightness-0 invert" />
-          )}
           <button onClick={() => setSidebarOpen(s => !s)} className="text-background/60 hover:text-background transition-colors ml-auto">
             <Menu size={18} />
           </button>
